@@ -2,7 +2,7 @@
 
 ## Procedencia y alcance
 
-Caso de estudio real; eventos de desarrollo sintéticos, sin validación empresarial final. Los ejemplos no se atribuyen a empleados reales. El paquete incluye código y SQL del Sprint 1 para estudio, muestras pequeñas y resultados previos. Los archivos completos de datos, credenciales y auditorías privadas no se distribuyen.
+Caso de estudio real; eventos de desarrollo sintéticos, sin validación empresarial final. Los ejemplos no se atribuyen a empleados reales. El paquete incluye código y SQL del Sprint 1 para estudio, muestras pequeñas y resultados previos. Los datos sintéticos de desarrollo ahora se comparten en [data](../../data/README.md); credenciales, etiquetas reservadas y auditorías privadas no se distribuyen.
 
 ## Diccionario de fuentes
 

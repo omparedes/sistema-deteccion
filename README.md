@@ -2,7 +2,7 @@
 
 Proyecto de investigación sobre preparación y análisis de actividades informáticas mediante Isolation Forest en trabajo remoto en Lima. **Caso de estudio real; eventos de desarrollo sintéticos y validación empresarial final pendiente.** No es software comercial ni prueba de fugas confirmadas.
 
-Este repositorio incluye **código y scripts del Sprint 1**, contratos, pruebas, documentación académica y demostraciones offline. No contiene credenciales, certificados privados, datos completos ni auditorías internas. El código avanzado existente de P18/P15 permanece incompleto y congelado; publicarlo no implica validarlo ni autorizar su ejecución.
+Este repositorio incluye **código y scripts del Sprint 1**, contratos, pruebas, documentación académica y demostraciones offline. También incluye los datos sintéticos de desarrollo y sus salidas locales revisadas. No contiene credenciales, certificados privados, etiquetas reservadas ni auditorías internas. El código avanzado existente de P18/P15 permanece incompleto y congelado; publicarlo no implica validarlo ni autorizar su ejecución.
 
 ## Documentación
 
@@ -54,7 +54,7 @@ Para recrear el conjunto sintético original, el generador existente admite:
 python -B scripts/datasets/generate_raw.py --rows 20000 --seed 20261011 --out data/generated/v2
 ```
 
-No ejecutar el generador sobre un directorio con datos que se deban conservar. Los datos completos y etiquetas sintéticas reservadas producidos localmente permanecen excluidos de Git; no intervienen en el procesamiento operativo ni en características.
+No ejecutar el generador sobre un directorio con datos que se deban conservar. Los datos sintéticos compartibles están en [data](data/README.md). Las etiquetas de evaluación reservadas y data/private siguen excluidos de Git; no se usan etiquetas para el procesamiento operativo ni las características.
 
 Pruebas: revisar sus dependencias y tipos en tests. Las integraciones de base son opt-in y **no deben activarse para una exposición**; requieren entorno y autorización propios. No se promete nueva validación funcional por el hecho de publicar el código.
 

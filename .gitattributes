@@ -5,3 +5,6 @@
 
 # Preserve verified demo sample bytes across clones (manifest SHA-256).
 demo/muestras/** -text
+
+# Preserve source/output hashes and stored manifests exactly.
+data/** -text

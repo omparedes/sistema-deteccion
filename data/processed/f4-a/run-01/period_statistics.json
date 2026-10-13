@@ -1,0 +1,26 @@
+{
+  "train": {
+    "events": 12122,
+    "potential_windows": 12000,
+    "nonempty_windows": 1334,
+    "empty_windows_omitted": 10666,
+    "model_eligible_windows": 1334,
+    "users_with_activity": 25
+  },
+  "validation": {
+    "events": 4516,
+    "potential_windows": 3000,
+    "nonempty_windows": 487,
+    "empty_windows_omitted": 2513,
+    "model_eligible_windows": 487,
+    "users_with_activity": 25
+  },
+  "test": {
+    "events": 2626,
+    "potential_windows": 3000,
+    "nonempty_windows": 281,
+    "empty_windows_omitted": 2719,
+    "model_eligible_windows": 281,
+    "users_with_activity": 25
+  }
+}

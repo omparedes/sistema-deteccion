@@ -91,3 +91,25 @@ private-notes/
 
 # Única configuración compartible: ejemplo ficticio, nunca .env real.
 !/.env.example
+
+# Datos sintéticos autorizados para compartir (sin privados ni etiquetas).
+!/data/
+/data/*
+!/data/README.md
+!/data/generated/
+!/data/generated/**
+!/data/processed/
+!/data/processed/**
+!/data/raw/
+!/data/raw/**
+/data/private/
+/data/**/private_eval/
+/data/**/ground_truth*
+/data/**/.env
+/data/**/.env.*
+/data/**/*.pem
+/data/**/*.key
+/data/**/*.crt
+/data/**/__pycache__/
+/data/**/*.zip
+/data/**/*.bak

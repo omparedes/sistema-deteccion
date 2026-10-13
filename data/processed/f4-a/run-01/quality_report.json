@@ -1,0 +1,154 @@
+{
+  "version": "hu03-v1",
+  "schema_version": "features-v1",
+  "provenance": "SYNTHETIC_GENERATED_NOT_OBSERVED",
+  "events_used": 19264,
+  "normalized_input_events": 19264,
+  "quarantine_not_read": 378,
+  "duplicate_occurrences_not_read": 358,
+  "users_in_directory": 25,
+  "users_with_activity": 25,
+  "users_without_activity": [],
+  "windows": 2102,
+  "nonempty_windows": 2102,
+  "empty_windows_omitted": 15898,
+  "model_eligible_windows": 2102,
+  "provisional_windows": 0,
+  "feature_columns": [
+    "operation_count",
+    "total_bytes",
+    "operations_per_hour",
+    "off_hours_count",
+    "off_hours_ratio",
+    "distinct_destination_count",
+    "missing_destination_count",
+    "missing_destination_ratio",
+    "download_count",
+    "upload_count",
+    "usb_copy_count"
+  ],
+  "diagnostic_columns": [
+    "avg_file_size",
+    "max_file_size",
+    "transfer_frequency"
+  ],
+  "missing_destinations_in_used_events": 852,
+  "partitions": {
+    "train": {
+      "events": 12122,
+      "potential_windows": 12000,
+      "nonempty_windows": 1334,
+      "empty_windows_omitted": 10666,
+      "model_eligible_windows": 1334,
+      "users_with_activity": 25
+    },
+    "validation": {
+      "events": 4516,
+      "potential_windows": 3000,
+      "nonempty_windows": 487,
+      "empty_windows_omitted": 2513,
+      "model_eligible_windows": 487,
+      "users_with_activity": 25
+    },
+    "test": {
+      "events": 2626,
+      "potential_windows": 3000,
+      "nonempty_windows": 281,
+      "empty_windows_omitted": 2719,
+      "model_eligible_windows": 281,
+      "users_with_activity": 25
+    }
+  },
+  "validation": {
+    "unique_window_ids": true,
+    "finite_nonnegative_values": true,
+    "ratios_valid": true,
+    "partitions_disjoint": true,
+    "identifiers_not_model_features": true,
+    "nulls_in_matrix": 0,
+    "window_count": 2102
+  },
+  "reader_counts": {
+    "processed_read": 19264
+  },
+  "processing_counts": {
+    "received_valid": 19264,
+    "events_used": 19264
+  },
+  "database_access": false,
+  "learned_scaling": false,
+  "feature_statistics_nonempty_windows": {
+    "operation_count": {
+      "min": 1,
+      "max": 41,
+      "mean": 9.164605137963845
+    },
+    "total_bytes": {
+      "min": 185172,
+      "max": 5057851080,
+      "mean": 99171915.32540438
+    },
+    "operations_per_hour": {
+      "min": 1.0,
+      "max": 41.0,
+      "mean": 9.164605137963845
+    },
+    "off_hours_count": {
+      "min": 0,
+      "max": 17,
+      "mean": 0.6465271170313986
+    },
+    "off_hours_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.08468125594671741
+    },
+    "distinct_destination_count": {
+      "min": 1,
+      "max": 4,
+      "mean": 1.19267364414843
+    },
+    "missing_destination_count": {
+      "min": 0,
+      "max": 4,
+      "mean": 0.40532825880114176
+    },
+    "missing_destination_ratio": {
+      "min": 0.0,
+      "max": 0.5,
+      "mean": 0.044379904075095976
+    },
+    "download_count": {
+      "min": 0,
+      "max": 17,
+      "mean": 1.91151284490961
+    },
+    "upload_count": {
+      "min": 0,
+      "max": 18,
+      "mean": 1.330161750713606
+    },
+    "usb_copy_count": {
+      "min": 0,
+      "max": 18,
+      "mean": 0.0461465271170314
+    }
+  },
+  "diagnostic_statistics_nonempty_windows": {
+    "avg_file_size": {
+      "min": 185172.0,
+      "max": 536382569.0,
+      "mean": 10935398.492652427
+    },
+    "max_file_size": {
+      "min": 185172,
+      "max": 1373196510,
+      "mean": 24046991.76308278
+    },
+    "transfer_frequency": {
+      "min": 0.0,
+      "max": 30.0,
+      "mean": 6.285442435775452
+    }
+  }
+}

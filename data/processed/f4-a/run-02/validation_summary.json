@@ -1,0 +1,9 @@
+{
+  "unique_window_ids": true,
+  "finite_nonnegative_values": true,
+  "ratios_valid": true,
+  "partitions_disjoint": true,
+  "identifiers_not_model_features": true,
+  "nulls_in_matrix": 0,
+  "window_count": 2102
+}

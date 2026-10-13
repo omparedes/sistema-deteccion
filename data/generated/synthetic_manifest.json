@@ -1,0 +1,30 @@
+{
+  "provenance": "SYNTHETIC_GENERATED_NOT_OBSERVED",
+  "seed": 20261011,
+  "organization": "FICTIONAL_SOFTWARE_CONSULTANCY",
+  "employee_count": 25,
+  "events_total_including_duplicate_rows": 20000,
+  "source_row_counts": {
+    "endpoint": 10000,
+    "cloud": 6500,
+    "transfer": 3500
+  },
+  "intentional_duplicate_rows": {
+    "endpoint": 184,
+    "cloud": 136,
+    "transfer": 62
+  },
+  "scenario_counts_unique_rows": {
+    "off_hours": 239,
+    "normal": 18796,
+    "unusual_large_transfer": 202,
+    "authorized_backup": 155,
+    "unauthorized_destination": 131,
+    "usb_copy": 95
+  },
+  "limitations": [
+    "Not actual company exports or observed behavior.",
+    "Injected anomaly labels are not verified information leaks.",
+    "Do not use private_eval/ground_truth.csv in feature extraction or training."
+  ]
+}

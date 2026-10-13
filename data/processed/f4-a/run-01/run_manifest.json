@@ -1,0 +1,62 @@
+{
+  "version": "hu03-v1",
+  "schema_version": "features-v1",
+  "context": {
+    "normalization_version": "hu02-v1",
+    "directory_sha256": "2c8e6a96ebb85600479b987d0e46acbc4e5ec82543cf33aedb9b70720ff2458c",
+    "normalized_contract_sha256": "0705c8b9d9d106c13cd2dea1171d05d827cf3a3bc1ab09370350d791a8f60d7c",
+    "feature_schema_version": "features-v1",
+    "feature_contract_sha256": "9ec0d004d303dcbd155b084dd4e2f9a74764200973f2e198dfec4404bf83409e"
+  },
+  "inputs_sha256": {
+    "normalized.jsonl": "a79bdaf626e0c7ab422d0676c9691067b6e7a5d9dbdfc5b074133e2da2ad8a65",
+    "quality_report.json": "84c3d2ee8fa4edfac83de5d4c4592a7b321742fc8b827023859094fe0a6afc20",
+    "employees_directory.csv": "2c8e6a96ebb85600479b987d0e46acbc4e5ec82543cf33aedb9b70720ff2458c"
+  },
+  "coverage": {
+    "start": "2026-09-01T05:00:00Z",
+    "end": "2026-10-01T05:00:00Z",
+    "status": "closed",
+    "minutes": 60,
+    "alignment": "UTC hour",
+    "interval": "[start,end)",
+    "work_timezone": "America/Lima UTC-05:00",
+    "empty_policy": "omit"
+  },
+  "feature_columns": [
+    "operation_count",
+    "total_bytes",
+    "operations_per_hour",
+    "off_hours_count",
+    "off_hours_ratio",
+    "distinct_destination_count",
+    "missing_destination_count",
+    "missing_destination_ratio",
+    "download_count",
+    "upload_count",
+    "usb_copy_count"
+  ],
+  "matrix_rows": 2102,
+  "normalization_fingerprint": "2d14dd554e0bbcfe37ef811917ac9e840eb70347f8349cc5fb0b64f17162e389",
+  "source_files_sha256": {
+    "cloud_audit_export.csv": "e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9",
+    "endpoint_file_logs.csv": "6ed0d8a9e53893ebfbc8b275909a1e2b6f7dec013fc29e6332231573df7116d7",
+    "transfer_activity.csv": "0a5e3b8cdd3c1e3ef9843664f0bfe095b93eeb3bfef8bc6ba95c57bed3ae103b"
+  },
+  "code_sha256": {
+    "features.py": "586d4be01218c01acd3c07a0ae3c9a4acff3e8cc6fa7e961b28cf9e25b7cb7ee",
+    "feature_run.py": "5a7efa6cc968f93c1060a349f17a0bf410d88ff6e74e2dc8104bbe7ae5cc6c8a"
+  },
+  "synthetic": true,
+  "database_writes": false,
+  "model_trained": false,
+  "labels_used": false,
+  "scaling_fitted": false,
+  "outputs_sha256": {
+    "feature_matrix.csv": "3e2f2f3059e1a6490e7340abfeee5c9a15be82b7fd0e77fa92010e565f4f983a",
+    "windows.jsonl": "c9568cba206b937f66ae5e682c4f5628b747fa968bec600c6d217a3f8138e48d",
+    "validation_summary.json": "1a238191a265fd3e0c3f9050097e1599ba8bcfcbd35c76bb93efea0497fd48a4",
+    "period_statistics.json": "52213ab9e7f46e383cc9f45d3df0eb1f4b1dc41aff80e9b7a748da036a72d886",
+    "quality_report.json": "a623b38e94dc2a4ee24daa000cf698e69273e563a8ff61b18d5e7b4752fc5e3d"
+  }
+}

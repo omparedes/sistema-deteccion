@@ -1,0 +1,680 @@
+{
+  "CLOUD-0000769": {
+    "audit": [
+      {
+        "after": "EMP018",
+        "before": "u-018",
+        "code": "ACTOR_ALIAS_RESOLVED",
+        "field": "actorId",
+        "moment": "2026-09-01T12:18:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "2026-09-01T12:18:00Z",
+        "before": "2026-09-01T07:18:00-05:00",
+        "code": "TIMESTAMP_TO_UTC",
+        "field": "eventTime",
+        "moment": "2026-09-01T12:18:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": 8019605,
+        "before": "8019605",
+        "code": "SIZE_TO_BYTES",
+        "field": "sizeBytes",
+        "moment": "2026-09-01T12:18:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "file_download",
+        "before": "DOWNLOAD",
+        "code": "OPERATION_MAPPED",
+        "field": "activity",
+        "moment": "2026-09-01T12:18:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "log",
+        "before": "project_cloud-0000642_asset_000.log",
+        "code": "FILE_EXTENSION_EXTRACTED",
+        "field": "resourceName",
+        "moment": "2026-09-01T12:18:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      }
+    ],
+    "directory_sha256": "2c8e6a96ebb85600479b987d0e46acbc4e5ec82543cf33aedb9b70720ff2458c",
+    "duplicate_of": null,
+    "field_states": {
+      "actor": "known",
+      "destination": "known",
+      "size": "known",
+      "source_path": "not_applicable",
+      "source_type": "known",
+      "timestamp": "known"
+    },
+    "file": "cloud_audit_export.csv",
+    "file_sha256": "e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9",
+    "normalized_event": {
+      "data_classification": "INTERNAL",
+      "destination_authorized": null,
+      "destination_path": "backups.internal",
+      "destination_type": "host",
+      "device_id": null,
+      "event_id": "c3548eb7-c46a-5999-8e7c-ce2abc2270e6",
+      "file_extension": "log",
+      "file_size_bytes": 8019605,
+      "is_synthetic": true,
+      "operation": "file_download",
+      "operation_result": null,
+      "raw_event_reference": "csv-sha256:e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9:1",
+      "source": "cloud",
+      "source_event_id": "CLOUD-0000769",
+      "source_path": null,
+      "source_type": "CORPORATE_REPOSITORY",
+      "timestamp": "2026-09-01T12:18:00Z",
+      "user_id": "EMP018"
+    },
+    "raw_payload": {
+      "activity": "DOWNLOAD",
+      "actorId": "u-018",
+      "category": "INTERNAL",
+      "clientApp": "backup-client",
+      "destination": "backups.internal",
+      "eventTime": "2026-09-01T07:18:00-05:00",
+      "recordId": "CLOUD-0000769",
+      "resourceName": "project_cloud-0000642_asset_000.log",
+      "sizeBytes": "8019605",
+      "sourceType": "CORPORATE_REPOSITORY"
+    },
+    "raw_reference": "csv-sha256:e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9:1",
+    "record_number": 1,
+    "source": "cloud",
+    "status": "processed",
+    "temporal": {
+      "interpreted_zone": "-0500",
+      "lima_timestamp": "2026-09-01T07:18:00-05:00",
+      "local_zone_assumed": false,
+      "state": "known",
+      "timestamp": "2026-09-01T12:18:00Z"
+    },
+    "version": "hu02-v1"
+  },
+  "ENDPOINT-0001195": {
+    "audit": [
+      {
+        "after": "EMP003",
+        "before": "u-003",
+        "code": "ACTOR_ALIAS_RESOLVED",
+        "field": "USUARIO",
+        "moment": "2026-09-01T12:00:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "2026-09-01T12:00:00Z",
+        "before": "2026-09-01 07:00:00",
+        "code": "TIMESTAMP_TO_UTC",
+        "field": "FECHA",
+        "moment": "2026-09-01T12:00:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": 21474836,
+        "before": "20.48",
+        "code": "SIZE_TO_BYTES",
+        "field": "TAMANO",
+        "moment": "2026-09-01T12:00:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": 21474836,
+        "before": "20.48",
+        "code": "SIZE_ROUNDED",
+        "field": "TAMANO",
+        "moment": "2026-09-01T12:00:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "file_modify",
+        "before": "Editar",
+        "code": "OPERATION_MAPPED",
+        "field": "ACCION",
+        "moment": "2026-09-01T12:00:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "zip",
+        "before": "project_endpoint-0001698_asset_000.zip",
+        "code": "FILE_EXTENSION_EXTRACTED",
+        "field": "ARCHIVO",
+        "moment": "2026-09-01T12:00:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      }
+    ],
+    "directory_sha256": "2c8e6a96ebb85600479b987d0e46acbc4e5ec82543cf33aedb9b70720ff2458c",
+    "duplicate_of": null,
+    "field_states": {
+      "actor": "known",
+      "destination": "known",
+      "size": "known",
+      "source_path": "known",
+      "source_type": "not_applicable",
+      "timestamp": "known"
+    },
+    "file": "endpoint_file_logs.csv",
+    "file_sha256": "6ed0d8a9e53893ebfbc8b275909a1e2b6f7dec013fc29e6332231573df7116d7",
+    "normalized_event": {
+      "data_classification": null,
+      "destination_authorized": null,
+      "destination_path": "\\\\backups.internal\\projects",
+      "destination_type": "path",
+      "device_id": "LAB-PC-03",
+      "event_id": "8719a352-266d-51af-8051-8d634a4cc3e5",
+      "file_extension": "zip",
+      "file_size_bytes": 21474836,
+      "is_synthetic": true,
+      "operation": "file_modify",
+      "operation_result": null,
+      "raw_event_reference": "csv-sha256:6ed0d8a9e53893ebfbc8b275909a1e2b6f7dec013fc29e6332231573df7116d7:1",
+      "source": "endpoint",
+      "source_event_id": "ENDPOINT-0001195",
+      "source_path": "C:\\Projects\\project_endpoint-0001698_asset_000.zip",
+      "source_type": null,
+      "timestamp": "2026-09-01T12:00:00Z",
+      "user_id": "EMP003"
+    },
+    "raw_payload": {
+      "ACCION": "Editar",
+      "APP": "admin-console",
+      "ARCHIVO": "project_endpoint-0001698_asset_000.zip",
+      "FECHA": "2026-09-01 07:00:00",
+      "PC": "LAB-PC-03",
+      "RUTA_DESTINO": "\\\\backups.internal\\projects",
+      "RUTA_ORIGEN": "C:\\Projects\\project_endpoint-0001698_asset_000.zip",
+      "TAMANO": "20.48",
+      "UNIDAD": "MB",
+      "USUARIO": "u-003",
+      "id_evento": "ENDPOINT-0001195"
+    },
+    "raw_reference": "csv-sha256:6ed0d8a9e53893ebfbc8b275909a1e2b6f7dec013fc29e6332231573df7116d7:1",
+    "record_number": 1,
+    "source": "endpoint",
+    "status": "processed",
+    "temporal": {
+      "interpreted_zone": "-0500",
+      "lima_timestamp": "2026-09-01T07:00:00-05:00",
+      "local_zone_assumed": true,
+      "state": "known",
+      "timestamp": "2026-09-01T12:00:00Z"
+    },
+    "version": "hu02-v1"
+  },
+  "TRANSFER-0001812": {
+    "audit": [
+      {
+        "after": "EMP018",
+        "before": "STAFF-018",
+        "code": "ACTOR_ALIAS_RESOLVED",
+        "field": "Account",
+        "moment": "2026-09-01T13:57:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "2026-09-01T13:57:00Z",
+        "before": "09/01/2026 08:57:00 AM",
+        "code": "TIMESTAMP_TO_UTC",
+        "field": "TimeStamp",
+        "moment": "2026-09-01T13:57:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": 5304996,
+        "before": "5180.66 KB",
+        "code": "SIZE_TO_BYTES",
+        "field": "Size",
+        "moment": "2026-09-01T13:57:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": 5304996,
+        "before": "5180.66 KB",
+        "code": "SIZE_ROUNDED",
+        "field": "Size",
+        "moment": "2026-09-01T13:57:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "email_attachment",
+        "before": "EMAIL_ATTACHMENT",
+        "code": "OPERATION_MAPPED",
+        "field": "TransferMethod",
+        "moment": "2026-09-01T13:57:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "zip",
+        "before": "project_transfer-0002403_asset_000.zip",
+        "code": "FILE_EXTENSION_EXTRACTED",
+        "field": "Object",
+        "moment": "2026-09-01T13:57:00Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      }
+    ],
+    "directory_sha256": "2c8e6a96ebb85600479b987d0e46acbc4e5ec82543cf33aedb9b70720ff2458c",
+    "duplicate_of": null,
+    "field_states": {
+      "actor": "known",
+      "destination": "known",
+      "size": "known",
+      "source_path": "not_applicable",
+      "source_type": "not_applicable",
+      "timestamp": "known"
+    },
+    "file": "transfer_activity.csv",
+    "file_sha256": "0a5e3b8cdd3c1e3ef9843664f0bfe095b93eeb3bfef8bc6ba95c57bed3ae103b",
+    "normalized_event": {
+      "data_classification": "INTERNAL",
+      "destination_authorized": null,
+      "destination_path": "backups.internal",
+      "destination_type": "host",
+      "device_id": "LAB-PC-18",
+      "event_id": "99d19214-eebb-5cae-8907-d8e60aa35005",
+      "file_extension": "zip",
+      "file_size_bytes": 5304996,
+      "is_synthetic": true,
+      "operation": "email_attachment",
+      "operation_result": "ALLOWED",
+      "raw_event_reference": "csv-sha256:0a5e3b8cdd3c1e3ef9843664f0bfe095b93eeb3bfef8bc6ba95c57bed3ae103b:1",
+      "source": "transfer",
+      "source_event_id": "TRANSFER-0001812",
+      "source_path": null,
+      "source_type": null,
+      "timestamp": "2026-09-01T13:57:00Z",
+      "user_id": "EMP018"
+    },
+    "raw_payload": {
+      "Account": "STAFF-018",
+      "Classification": "INTERNAL",
+      "Destination": "backups.internal",
+      "Object": "project_transfer-0002403_asset_000.zip",
+      "PCName": "LAB-PC-18",
+      "Result": "ALLOWED",
+      "Size": "5180.66 KB",
+      "TimeStamp": "09/01/2026 08:57:00 AM",
+      "TransferId": "TRANSFER-0001812",
+      "TransferMethod": "EMAIL_ATTACHMENT"
+    },
+    "raw_reference": "csv-sha256:0a5e3b8cdd3c1e3ef9843664f0bfe095b93eeb3bfef8bc6ba95c57bed3ae103b:1",
+    "record_number": 1,
+    "source": "transfer",
+    "status": "processed",
+    "temporal": {
+      "interpreted_zone": "-0500",
+      "lima_timestamp": "2026-09-01T08:57:00-05:00",
+      "local_zone_assumed": true,
+      "state": "known",
+      "timestamp": "2026-09-01T13:57:00Z"
+    },
+    "version": "hu02-v1"
+  },
+  "duplicate": {
+    "audit": [
+      {
+        "after": "EMP007",
+        "before": "u-007",
+        "code": "ACTOR_ALIAS_RESOLVED",
+        "field": "actorId",
+        "moment": "2026-09-01T18:22:22Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "2026-09-01T18:22:22Z",
+        "before": "2026-09-01T13:22:22-05:00",
+        "code": "TIMESTAMP_TO_UTC",
+        "field": "eventTime",
+        "moment": "2026-09-01T18:22:22Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": 1656623,
+        "before": "1656623",
+        "code": "SIZE_TO_BYTES",
+        "field": "sizeBytes",
+        "moment": "2026-09-01T18:22:22Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "web_upload",
+        "before": "Subir",
+        "code": "OPERATION_MAPPED",
+        "field": "activity",
+        "moment": "2026-09-01T18:22:22Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "docx",
+        "before": "project_cloud-0003123_asset_002.docx",
+        "code": "FILE_EXTENSION_EXTRACTED",
+        "field": "resourceName",
+        "moment": "2026-09-01T18:22:22Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "csv-sha256:e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9:162",
+        "before": "csv-sha256:e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9:163",
+        "code": "EXACT_DUPLICATE",
+        "field": "raw_reference",
+        "moment": "2026-09-01T18:22:22Z",
+        "moment_kind": "event_timestamp",
+        "severity": "info",
+        "stage": "deduplication",
+        "version": "hu02-v1"
+      }
+    ],
+    "directory_sha256": "2c8e6a96ebb85600479b987d0e46acbc4e5ec82543cf33aedb9b70720ff2458c",
+    "duplicate_of": "csv-sha256:e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9:162",
+    "field_states": {
+      "actor": "known",
+      "destination": "known",
+      "size": "known",
+      "source_path": "not_applicable",
+      "source_type": "known",
+      "timestamp": "known"
+    },
+    "file": "cloud_audit_export.csv",
+    "file_sha256": "e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9",
+    "normalized_event": null,
+    "raw_payload": {
+      "activity": "Subir",
+      "actorId": "u-007",
+      "category": "INTERNAL",
+      "clientApp": "test-runner",
+      "destination": "quality.internal",
+      "eventTime": "2026-09-01T13:22:22-05:00",
+      "recordId": "CLOUD-0003425",
+      "resourceName": "project_cloud-0003123_asset_002.docx",
+      "sizeBytes": "1656623",
+      "sourceType": "CORPORATE_REPOSITORY"
+    },
+    "raw_reference": "csv-sha256:e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9:163",
+    "record_number": 163,
+    "source": "cloud",
+    "status": "duplicate",
+    "temporal": {
+      "interpreted_zone": "-0500",
+      "lima_timestamp": "2026-09-01T13:22:22-05:00",
+      "local_zone_assumed": false,
+      "state": "known",
+      "timestamp": "2026-09-01T18:22:22Z"
+    },
+    "version": "hu02-v1"
+  },
+  "missing_destination": {
+    "audit": [
+      {
+        "after": "EMP003",
+        "before": "u-003",
+        "code": "ACTOR_ALIAS_RESOLVED",
+        "field": "actorId",
+        "moment": "2026-09-01T13:51:38Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "2026-09-01T13:51:38Z",
+        "before": "2026-09-01T13:51:38Z",
+        "code": "TIMESTAMP_TO_UTC",
+        "field": "eventTime",
+        "moment": "2026-09-01T13:51:38Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": 3210416,
+        "before": "3210416",
+        "code": "SIZE_TO_BYTES",
+        "field": "sizeBytes",
+        "moment": "2026-09-01T13:51:38Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "cloud_sync",
+        "before": "Sincronizar",
+        "code": "OPERATION_MAPPED",
+        "field": "activity",
+        "moment": "2026-09-01T13:51:38Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": null,
+        "before": "",
+        "code": "MISSING_DESTINATION",
+        "field": "destination",
+        "moment": "2026-09-01T13:51:38Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "zip",
+        "before": "project_cloud-0000333_asset_002.zip",
+        "code": "FILE_EXTENSION_EXTRACTED",
+        "field": "resourceName",
+        "moment": "2026-09-01T13:51:38Z",
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      }
+    ],
+    "directory_sha256": "2c8e6a96ebb85600479b987d0e46acbc4e5ec82543cf33aedb9b70720ff2458c",
+    "duplicate_of": null,
+    "field_states": {
+      "actor": "known",
+      "destination": "absent",
+      "size": "known",
+      "source_path": "not_applicable",
+      "source_type": "known",
+      "timestamp": "known"
+    },
+    "file": "cloud_audit_export.csv",
+    "file_sha256": "e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9",
+    "normalized_event": {
+      "data_classification": "INTERNAL",
+      "destination_authorized": null,
+      "destination_path": null,
+      "destination_type": null,
+      "device_id": null,
+      "event_id": "ccb1a312-89aa-5317-8fd3-7f755bd9583f",
+      "file_extension": "zip",
+      "file_size_bytes": 3210416,
+      "is_synthetic": true,
+      "operation": "cloud_sync",
+      "operation_result": null,
+      "raw_event_reference": "csv-sha256:e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9:10",
+      "source": "cloud",
+      "source_event_id": "CLOUD-0000745",
+      "source_path": null,
+      "source_type": "CORPORATE_REPOSITORY",
+      "timestamp": "2026-09-01T13:51:38Z",
+      "user_id": "EMP003"
+    },
+    "raw_payload": {
+      "activity": "Sincronizar",
+      "actorId": "u-003",
+      "category": "INTERNAL",
+      "clientApp": "backup-client",
+      "destination": "",
+      "eventTime": "2026-09-01T13:51:38Z",
+      "recordId": "CLOUD-0000745",
+      "resourceName": "project_cloud-0000333_asset_002.zip",
+      "sizeBytes": "3210416",
+      "sourceType": "CORPORATE_REPOSITORY"
+    },
+    "raw_reference": "csv-sha256:e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9:10",
+    "record_number": 10,
+    "source": "cloud",
+    "status": "processed",
+    "temporal": {
+      "interpreted_zone": "+0000",
+      "lima_timestamp": "2026-09-01T08:51:38-05:00",
+      "local_zone_assumed": false,
+      "state": "known",
+      "timestamp": "2026-09-01T13:51:38Z"
+    },
+    "version": "hu02-v1"
+  },
+  "quarantine": {
+    "audit": [
+      {
+        "after": "EMP017",
+        "before": "U-017",
+        "code": "ACTOR_ALIAS_RESOLVED",
+        "field": "actorId",
+        "moment": null,
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": null,
+        "before": "fecha_desconocida",
+        "code": "INVALID_TIMESTAMP",
+        "field": "eventTime",
+        "moment": null,
+        "moment_kind": "event_timestamp",
+        "severity": "error",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": 1542853,
+        "before": "1542853",
+        "code": "SIZE_TO_BYTES",
+        "field": "sizeBytes",
+        "moment": null,
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      },
+      {
+        "after": "cloud_sync",
+        "before": "SYNC",
+        "code": "OPERATION_MAPPED",
+        "field": "activity",
+        "moment": null,
+        "moment_kind": "event_timestamp",
+        "severity": "warning",
+        "stage": "normalization",
+        "version": "hu02-v1"
+      }
+    ],
+    "directory_sha256": "2c8e6a96ebb85600479b987d0e46acbc4e5ec82543cf33aedb9b70720ff2458c",
+    "duplicate_of": null,
+    "field_states": {
+      "actor": "known",
+      "destination": "known",
+      "size": "known",
+      "timestamp": "invalid"
+    },
+    "file": "cloud_audit_export.csv",
+    "file_sha256": "e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9",
+    "normalized_event": null,
+    "raw_payload": {
+      "activity": "SYNC",
+      "actorId": "U-017",
+      "category": "INTERNAL",
+      "clientApp": "document-editor",
+      "destination": "quality.internal",
+      "eventTime": "fecha_desconocida",
+      "recordId": "CLOUD-0000395",
+      "resourceName": "project_cloud-0001323_asset_005.docx",
+      "sizeBytes": "1542853",
+      "sourceType": "CORPORATE_REPOSITORY"
+    },
+    "raw_reference": "csv-sha256:e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9:60",
+    "record_number": 60,
+    "source": "cloud",
+    "status": "rejected",
+    "temporal": null,
+    "version": "hu02-v1"
+  }
+}

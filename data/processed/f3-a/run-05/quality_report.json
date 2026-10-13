@@ -1,0 +1,209 @@
+{
+  "database_writes": false,
+  "directory_sha256": "2c8e6a96ebb85600479b987d0e46acbc4e5ec82543cf33aedb9b70720ff2458c",
+  "employee_count": 25,
+  "exact_duplicates": 358,
+  "fatal_incidents_unique": {
+    "INVALID_TIMESTAMP": 139,
+    "MISSING_SIZE": 239
+  },
+  "field_states": {
+    "actor": {
+      "known": 20000
+    },
+    "destination": {
+      "absent": 883,
+      "known": 19117
+    },
+    "size": {
+      "invalid": 244,
+      "known": 19756
+    },
+    "source_path": {
+      "known": 10000,
+      "not_applicable": 10000
+    },
+    "source_type": {
+      "known": 6500,
+      "not_applicable": 13500
+    },
+    "timestamp": {
+      "invalid": 141,
+      "known": 19859
+    }
+  },
+  "incidents_all_occurrences": {
+    "ACTOR_ALIAS_RESOLVED": 16629,
+    "EXACT_DUPLICATE": 358,
+    "FILE_EXTENSION_EXTRACTED": 20000,
+    "INVALID_TIMESTAMP": 141,
+    "MISSING_DESTINATION": 883,
+    "MISSING_SIZE": 244,
+    "OPERATION_MAPPED": 20000,
+    "SIZE_ROUNDED": 8509,
+    "SIZE_TO_BYTES": 19756,
+    "TIMESTAMP_TO_UTC": 19859
+  },
+  "incidents_by_source": {
+    "cloud": {
+      "ACTOR_ALIAS_RESOLVED": 6500,
+      "EXACT_DUPLICATE": 116,
+      "FILE_EXTENSION_EXTRACTED": 6500,
+      "INVALID_TIMESTAMP": 40,
+      "MISSING_DESTINATION": 286,
+      "MISSING_SIZE": 81,
+      "OPERATION_MAPPED": 6500,
+      "SIZE_TO_BYTES": 6419,
+      "TIMESTAMP_TO_UTC": 6460
+    },
+    "endpoint": {
+      "ACTOR_ALIAS_RESOLVED": 6629,
+      "EXACT_DUPLICATE": 180,
+      "FILE_EXTENSION_EXTRACTED": 10000,
+      "INVALID_TIMESTAMP": 75,
+      "MISSING_DESTINATION": 426,
+      "MISSING_SIZE": 115,
+      "OPERATION_MAPPED": 10000,
+      "SIZE_ROUNDED": 6293,
+      "SIZE_TO_BYTES": 9885,
+      "TIMESTAMP_TO_UTC": 9925
+    },
+    "transfer": {
+      "ACTOR_ALIAS_RESOLVED": 3500,
+      "EXACT_DUPLICATE": 62,
+      "FILE_EXTENSION_EXTRACTED": 3500,
+      "INVALID_TIMESTAMP": 26,
+      "MISSING_DESTINATION": 171,
+      "MISSING_SIZE": 48,
+      "OPERATION_MAPPED": 3500,
+      "SIZE_ROUNDED": 2216,
+      "SIZE_TO_BYTES": 3452,
+      "TIMESTAMP_TO_UTC": 3474
+    }
+  },
+  "input_sha256": {
+    "cloud_audit_export.csv": "e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9",
+    "endpoint_file_logs.csv": "6ed0d8a9e53893ebfbc8b275909a1e2b6f7dec013fc29e6332231573df7116d7",
+    "transfer_activity.csv": "0a5e3b8cdd3c1e3ef9843664f0bfe095b93eeb3bfef8bc6ba95c57bed3ae103b"
+  },
+  "logical_fingerprint_sha256": "2d14dd554e0bbcfe37ef811917ac9e840eb70347f8349cc5fb0b64f17162e389",
+  "manifest_count_matches": {
+    "duplicates": true,
+    "raw": true,
+    "unique": true
+  },
+  "manifest_quality_comparison": {
+    "cloud": {
+      "invalid_size_na": {
+        "manifest": 81,
+        "matches": true,
+        "measured": 81
+      },
+      "invalid_timestamp": {
+        "manifest": 40,
+        "matches": true,
+        "measured": 40
+      },
+      "missing_destination": {
+        "manifest": 286,
+        "matches": true,
+        "measured": 286
+      },
+      "noncanonical_actor": {
+        "manifest": 3147,
+        "matches": true,
+        "measured": 3147
+      }
+    },
+    "endpoint": {
+      "invalid_size_na": {
+        "manifest": 115,
+        "matches": true,
+        "measured": 115
+      },
+      "invalid_timestamp": {
+        "manifest": 75,
+        "matches": true,
+        "measured": 75
+      },
+      "missing_destination": {
+        "manifest": 426,
+        "matches": true,
+        "measured": 426
+      },
+      "noncanonical_actor": {
+        "manifest": 6629,
+        "matches": true,
+        "measured": 6629
+      }
+    },
+    "transfer": {
+      "invalid_size_na": {
+        "manifest": 48,
+        "matches": true,
+        "measured": 48
+      },
+      "invalid_timestamp": {
+        "manifest": 26,
+        "matches": true,
+        "measured": 26
+      },
+      "missing_destination": {
+        "manifest": 171,
+        "matches": true,
+        "measured": 171
+      },
+      "noncanonical_actor": {
+        "manifest": 1671,
+        "matches": true,
+        "measured": 1671
+      }
+    }
+  },
+  "normalized_valid": 19264,
+  "per_source": {
+    "cloud": {
+      "duplicate": 116,
+      "processed": 6263,
+      "raw": 6500,
+      "rejected": 121
+    },
+    "endpoint": {
+      "duplicate": 180,
+      "processed": 9634,
+      "raw": 10000,
+      "rejected": 186
+    },
+    "transfer": {
+      "duplicate": 62,
+      "processed": 3367,
+      "raw": 3500,
+      "rejected": 71
+    }
+  },
+  "provenance": "SYNTHETIC_GENERATED_NOT_OBSERVED",
+  "quarantine": 378,
+  "raw_quality_measured": {
+    "cloud": {
+      "invalid_size_na": 81,
+      "invalid_timestamp": 40,
+      "missing_destination": 286,
+      "noncanonical_actor": 3147
+    },
+    "endpoint": {
+      "invalid_size_na": 115,
+      "invalid_timestamp": 75,
+      "missing_destination": 426,
+      "noncanonical_actor": 6629
+    },
+    "transfer": {
+      "invalid_size_na": 48,
+      "invalid_timestamp": 26,
+      "missing_destination": 171,
+      "noncanonical_actor": 1671
+    }
+  },
+  "raw_received": 20000,
+  "unique_events": 19642,
+  "version": "hu02-v1"
+}

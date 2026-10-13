@@ -81,7 +81,7 @@ Total: 2,102. Las ventanas no cruzan particiones; no se calculó escalado aprend
 
 ## 11. Evidencias compartibles
 
-[EVIDENCIAS](EVIDENCIAS.md) reúne resultados y límites de comprobación. Las [muestras y su manifiesto](../../demo/muestras/manifest.json) permiten comprobar ejemplos sin divulgar datos completos ni informes operativos detallados. El [visor](../../demo/visor/index.html) muestra resultados anteriores y el [notebook](../../demo/notebook/Sprint_01_Demostracion.ipynb) realiza cálculos pedagógicos sobre muestras pequeñas.
+[EVIDENCIAS](EVIDENCIAS.md) reúne resultados y límites de comprobación. Las [muestras y su manifiesto](../../demo/muestras/manifest.json) permiten comprobar ejemplos rápidamente; los datos sintéticos completos y salidas de referencia están en [data](../../data/README.md), sin divulgar informes operativos privados. El [visor](../../demo/visor/index.html) muestra resultados anteriores y el [notebook](../../demo/notebook/Sprint_01_Demostracion.ipynb) realiza cálculos pedagógicos sobre muestras pequeñas.
 
 ## 12. Pruebas esenciales
 
