@@ -1,0 +1,13 @@
+id_evento,FECHA,USUARIO,PC,ACCION,ARCHIVO,TAMANO,UNIDAD,RUTA_ORIGEN,RUTA_DESTINO,APP
+ENDPOINT-0001195,2026-09-01 07:00:00,u-003,LAB-PC-03,Editar,project_endpoint-0001698_asset_000.zip,20.48,MB,C:\Projects\project_endpoint-0001698_asset_000.zip,\\backups.internal\projects,admin-console
+ENDPOINT-0004839,01/09/2026 07:00:48,u-003,LAB-PC-03,Copia,project_endpoint-0001698_asset_001.sql,8559.61,KB,C:\Projects\project_endpoint-0001698_asset_001.sql,\\backups.internal\projects,admin-console
+ENDPOINT-0007263,01/09/2026 07:01:36,u-003,LAB-PC-03,COPY,project_endpoint-0001698_asset_002.zip,8820.86,KB,C:\Projects\project_endpoint-0001698_asset_002.zip,\\backups.internal\projects,admin-console
+ENDPOINT-0006844,2026-09-01 07:02:24,emp003,LAB-PC-03,COPY,project_endpoint-0001698_asset_003.bak,6244024,B,C:\Projects\project_endpoint-0001698_asset_003.bak,\\backups.internal\projects,admin-console
+ENDPOINT-0001484,2026-09-01 07:03:12,emp003,LAB-PC-03,OPEN,project_endpoint-0001698_asset_004.bak,4.86,MB,C:\Projects\project_endpoint-0001698_asset_004.bak,\\backups.internal\projects,admin-console
+ENDPOINT-0003959,2026-09-07 09:06:00,emp002,LAB-PC-02,COPY,project_endpoint-0000989_asset_000.csv,593.24,KB,C:\Projects\project_endpoint-0000989_asset_000.csv,/srv/quality/exports,document-editor
+ENDPOINT-0007483,07/09/2026 09:06:45,emp002,LAB-PC-02,abrir,project_endpoint-0000989_asset_001.csv,1499167,B,C:\Projects\project_endpoint-0000989_asset_001.csv,/srv/quality/exports,document-editor
+ENDPOINT-0007483,07/09/2026 09:06:45,emp002,LAB-PC-02,abrir,project_endpoint-0000989_asset_001.csv,1499167,B,C:\Projects\project_endpoint-0000989_asset_001.csv,/srv/quality/exports,document-editor
+ENDPOINT-0005471,07/09/2026 09:07:30,emp002,LAB-PC-02,Editar,project_endpoint-0000989_asset_002.csv,296708,B,C:\Projects\project_endpoint-0000989_asset_002.csv,/srv/quality/exports,document-editor
+ENDPOINT-0005733,2026-09-07 09:08:15,u-002,LAB-PC-02,OPEN,project_endpoint-0000989_asset_003.docx,1235643,B,C:\Projects\project_endpoint-0000989_asset_003.docx,/srv/quality/exports,document-editor
+ENDPOINT-0003056,2026-09-07 09:09:00,EMP002,LAB-PC-02,Copia,project_endpoint-0000989_asset_004.csv,0.57,MB,C:\Projects\project_endpoint-0000989_asset_004.csv,/srv/quality/exports,document-editor
+ENDPOINT-0008732,07/09/2026 09:09:45,EMP002,LAB-PC-02,COPY,project_endpoint-0000989_asset_005.docx,438.74,KB,C:\Projects\project_endpoint-0000989_asset_005.docx,/srv/quality/exports,document-editor

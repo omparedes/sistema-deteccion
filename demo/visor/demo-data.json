@@ -1,0 +1,212 @@
+{
+  "title": "Sprint 1 · Prototipo académico",
+  "synthetic": true,
+  "live_execution": false,
+  "evidence_date": "2026-10-12T17:29:09.653535-05:00",
+  "prepared_date": "2026-10-13",
+  "summary": {
+    "raw": 20000,
+    "canonical": 19642,
+    "duplicates": 358,
+    "normalized": 19264,
+    "quarantine": 378,
+    "actors": 25,
+    "windows": 2102,
+    "features": 11
+  },
+  "sources": [
+    {
+      "code": "endpoint",
+      "file": "endpoint_file_logs.csv",
+      "rows": 10000
+    },
+    {
+      "code": "cloud",
+      "file": "cloud_audit_export.csv",
+      "rows": 6500
+    },
+    {
+      "code": "transfer",
+      "file": "transfer_activity.csv",
+      "rows": 3500
+    }
+  ],
+  "samples": [
+    {
+      "source": "cloud",
+      "event_id": "CLOUD-0000769",
+      "raw": {
+        "actorId": "u-018",
+        "activity": "DOWNLOAD",
+        "category": "INTERNAL",
+        "recordId": "CLOUD-0000769",
+        "clientApp": "backup-client",
+        "eventTime": "2026-09-01T07:18:00-05:00",
+        "sizeBytes": "8019605",
+        "sourceType": "CORPORATE_REPOSITORY",
+        "destination": "backups.internal",
+        "resourceName": "project_cloud-0000642_asset_000.log"
+      },
+      "normalized": {
+        "user_id": "EMP018",
+        "timestamp": "2026-09-01 12:18:00+00:00",
+        "file_size_bytes": 8019605,
+        "operation": "file_download",
+        "destination_path": "backups.internal"
+      },
+      "provenance": "resultados-verificados.json · ejemplo HU02 contrastado previamente",
+      "representation": "Proyección verificada de campos normalizados; no representa todas las columnas del contrato"
+    },
+    {
+      "source": "endpoint",
+      "event_id": "ENDPOINT-0001195",
+      "raw": {
+        "PC": "LAB-PC-03",
+        "APP": "admin-console",
+        "FECHA": "2026-09-01 07:00:00",
+        "ACCION": "Editar",
+        "TAMANO": "20.48",
+        "UNIDAD": "MB",
+        "ARCHIVO": "project_endpoint-0001698_asset_000.zip",
+        "USUARIO": "u-003",
+        "id_evento": "ENDPOINT-0001195",
+        "RUTA_ORIGEN": "C:\\Projects\\project_endpoint-0001698_asset_000.zip",
+        "RUTA_DESTINO": "\\\\backups.internal\\projects"
+      },
+      "normalized": {
+        "user_id": "EMP003",
+        "timestamp": "2026-09-01 12:00:00+00:00",
+        "file_size_bytes": 21474836,
+        "operation": "file_modify",
+        "destination_path": "\\\\backups.internal\\projects"
+      },
+      "provenance": "resultados-verificados.json · ejemplo HU02 contrastado previamente",
+      "representation": "Proyección verificada de campos normalizados; no representa todas las columnas del contrato"
+    },
+    {
+      "source": "transfer",
+      "event_id": "TRANSFER-0001812",
+      "raw": {
+        "Size": "5180.66 KB",
+        "Object": "project_transfer-0002403_asset_000.zip",
+        "PCName": "LAB-PC-18",
+        "Result": "ALLOWED",
+        "Account": "STAFF-018",
+        "TimeStamp": "09/01/2026 08:57:00 AM",
+        "TransferId": "TRANSFER-0001812",
+        "Destination": "backups.internal",
+        "Classification": "INTERNAL",
+        "TransferMethod": "EMAIL_ATTACHMENT"
+      },
+      "normalized": {
+        "user_id": "EMP018",
+        "timestamp": "2026-09-01 13:57:00+00:00",
+        "file_size_bytes": 5304996,
+        "operation": "email_attachment",
+        "destination_path": "backups.internal"
+      },
+      "provenance": "resultados-verificados.json · ejemplo HU02 contrastado previamente",
+      "representation": "Proyección verificada de campos normalizados; no representa todas las columnas del contrato"
+    }
+  ],
+  "quarantine_examples": [
+    {
+      "source": "cloud",
+      "event_id": "CLOUD-0000288",
+      "raw_timestamp": "fecha_desconocida",
+      "issues": [
+        {
+          "code": "INVALID_TIMESTAMP",
+          "field": "eventTime"
+        }
+      ],
+      "provenance": "resultados-verificados.json · motivo HU02 documentado"
+    },
+    {
+      "source": "transfer",
+      "event_id": "TRANSFER-0002761",
+      "raw_timestamp": "fecha_desconocida",
+      "issues": [
+        {
+          "code": "INVALID_TIMESTAMP",
+          "field": "TimeStamp"
+        }
+      ],
+      "provenance": "resultados-verificados.json · motivo HU02 documentado"
+    }
+  ],
+  "duplicate_examples": [
+    {
+      "source": "cloud",
+      "event_id": "CLOUD-0002868",
+      "status": "Duplicado conservado y vinculado a su canónico"
+    },
+    {
+      "source": "endpoint",
+      "event_id": "ENDPOINT-0006814",
+      "status": "Duplicado conservado y vinculado a su canónico"
+    }
+  ],
+  "window": {
+    "actor": "EMP002",
+    "start": "2026-09-07 14:00:00+00:00",
+    "end": "2026-09-07 15:00:00+00:00",
+    "local_time": "2026-09-07 09:00–10:00, Lima",
+    "features": {
+      "total_bytes": 4685954,
+      "upload_count": 0,
+      "download_count": 0,
+      "usb_copy_count": 0,
+      "off_hours_count": 0,
+      "off_hours_ratio": 0.0,
+      "operation_count": 6,
+      "operations_per_hour": 6.0,
+      "missing_destination_count": 0,
+      "missing_destination_ratio": 0.0,
+      "distinct_destination_count": 1
+    },
+    "feature_order": [
+      "operation_count",
+      "total_bytes",
+      "operations_per_hour",
+      "off_hours_count",
+      "off_hours_ratio",
+      "distinct_destination_count",
+      "missing_destination_count",
+      "missing_destination_ratio",
+      "download_count",
+      "upload_count",
+      "usb_copy_count"
+    ],
+    "diagnostics": {
+      "avg_file_size": 780992.3333333334,
+      "max_file_size": 1499167,
+      "transfer_frequency": 3.0
+    },
+    "complete": true,
+    "partition": "train",
+    "provenance": "resultados-verificados.json · ventana contrastada con cálculo independiente"
+  },
+  "partitions": {
+    "test": 281,
+    "train": 1334,
+    "validation": 487
+  },
+  "offline_tests": {
+    "count": 194,
+    "evidence": "resumen académico de pruebas previas",
+    "new_tests_run_now": false
+  },
+  "limitations": [
+    "Los eventos son sintéticos; el caso de estudio es real, sin validación empresarial final.",
+    "Sprint 1 no entrenó ni evaluó Isolation Forest.",
+    "P18 FAIL y P15 PARTIAL integrales: capacidades avanzadas congeladas.",
+    "La aceptación académica formal está pendiente."
+  ],
+  "provenance": [
+    "E1 · resumen HU01",
+    "E2 · resultados HU02",
+    "E3 · resultados HU03",
+    "E4 · ejemplo EMP002"
+  ]
+}

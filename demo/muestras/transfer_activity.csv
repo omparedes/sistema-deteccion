@@ -1,0 +1,7 @@
+TransferId,TimeStamp,Account,PCName,TransferMethod,Object,Size,Destination,Result,Classification
+TRANSFER-0001812,09/01/2026 08:57:00 AM,STAFF-018,LAB-PC-18,EMAIL_ATTACHMENT,project_transfer-0002403_asset_000.zip,5180.66 KB,backups.internal,ALLOWED,INTERNAL
+TRANSFER-0000634,09/01/2026 08:57:56 AM,STAFF-018,LAB-PC-18,COPY,project_transfer-0002403_asset_001.bak,16492881 bytes,backups.internal,ALLOWED,INTERNAL
+TRANSFER-0003130,09/01/2026 08:58:52 AM,STAFF-018,LAB-PC-18,Adjuntar,project_transfer-0002403_asset_002.zip,25.94 MB,backups.internal,ALLOWED,PUBLIC
+TRANSFER-0000394,09/01/2026 08:59:48 AM,STAFF-018,LAB-PC-18,Adjuntar,project_transfer-0002403_asset_003.sql,24033.0 KB,backups.internal,ALLOWED,PUBLIC
+TRANSFER-0002950,09/01/2026 09:00:44 AM,STAFF-018,LAB-PC-18,Copia,project_transfer-0002403_asset_004.bak,1.77 MB,backups.internal,ALLOWED,CONFIDENTIAL
+TRANSFER-0002761,fecha_desconocida,STAFF-022,LAB-PC-22,COPY,project_transfer-0001313_asset_002.pdf,0.77 MB,,ALLOWED,INTERNAL

@@ -1,0 +1,10 @@
+recordId,eventTime,actorId,activity,resourceName,sizeBytes,sourceType,destination,clientApp,category
+CLOUD-0000769,2026-09-01T07:18:00-05:00,u-018,DOWNLOAD,project_cloud-0000642_asset_000.log,8019605,CORPORATE_REPOSITORY,backups.internal,backup-client,INTERNAL
+CLOUD-0002263,2026-09-01T07:18:58-05:00,U-018,Subir,project_cloud-0000642_asset_001.zip,10487015,CORPORATE_REPOSITORY,backups.internal,backup-client,PUBLIC
+CLOUD-0003736,2026-09-01T07:19:56-05:00,u-018,Subir,project_cloud-0000642_asset_002.log,17043110,CORPORATE_REPOSITORY,backups.internal,backup-client,INTERNAL
+CLOUD-0005902,2026-09-01T07:20:54-05:00,u-018,Subir,project_cloud-0000642_asset_003.log,2339825,CORPORATE_REPOSITORY,backups.internal,backup-client,INTERNAL
+CLOUD-0003515,2026-09-01T07:21:52-05:00,U-018,Subir,project_cloud-0000642_asset_004.log,8781310,CORPORATE_REPOSITORY,backups.internal,backup-client,INTERNAL
+CLOUD-0000745,2026-09-01T13:51:38Z,u-003,Sincronizar,project_cloud-0000333_asset_002.zip,3210416,CORPORATE_REPOSITORY,,backup-client,INTERNAL
+CLOUD-0000288,fecha_desconocida,u-017,OPEN,project_cloud-0005148_asset_004.csv,1995048,CORPORATE_REPOSITORY,quality.internal,test-runner,PUBLIC
+CLOUD-0002868,2026-09-30T22:41:28Z,u-024,Sincronizar,project_cloud-0005950_asset_002.psd,43291702,CORPORATE_REPOSITORY,design.internal,asset-client,PUBLIC
+CLOUD-0002868,2026-09-30T22:41:28Z,u-024,Sincronizar,project_cloud-0005950_asset_002.psd,43291702,CORPORATE_REPOSITORY,design.internal,asset-client,PUBLIC

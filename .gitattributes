@@ -1,0 +1,7 @@
+* text=auto
+*.ps1 text eol=crlf
+*.sql text eol=lf
+*.py text eol=lf
+
+# Preserve verified demo sample bytes across clones (manifest SHA-256).
+demo/muestras/** -text

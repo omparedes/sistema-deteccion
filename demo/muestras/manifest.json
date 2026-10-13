@@ -1,0 +1,75 @@
+{
+  "synthetic": true,
+  "extracted_on": "2026-10-13",
+  "case_study": "Empresa real; no se publican su identidad ni datos operativos",
+  "validation": "No se ha realizado validación empresarial final",
+  "global_raw_occurrences": 20000,
+  "sample_raw_occurrences": 27,
+  "private_evaluation_labels_included": false,
+  "files": {
+    "endpoint_file_logs.csv": {
+      "original_raw_filename": "endpoint_file_logs.csv",
+      "original_file_sha256": "6ed0d8a9e53893ebfbc8b275909a1e2b6f7dec013fc29e6332231573df7116d7",
+      "original_logical_rows": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        1912,
+        1914,
+        1915,
+        1917,
+        1919,
+        1921,
+        1922
+      ],
+      "sample_rows": 12,
+      "sample_sha256": "488d5f6b2b2d037e797d4376537eb04d5d0ecbbe43f5c446c9a174b9389798b8"
+    },
+    "cloud_audit_export.csv": {
+      "original_raw_filename": "cloud_audit_export.csv",
+      "original_file_sha256": "e2b29489bd872b2e5b65856726cbae6e63da7ecdcc2e588805e5a1e15674c1d9",
+      "original_logical_rows": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        186,
+        6491,
+        6492
+      ],
+      "sample_rows": 9,
+      "sample_sha256": "cea20e9e010dcc54a03c81329134c3880bd3de7cc9a8f0ebe0528f8a52ef0bc1"
+    },
+    "transfer_activity.csv": {
+      "original_raw_filename": "transfer_activity.csv",
+      "original_file_sha256": "0a5e3b8cdd3c1e3ef9843664f0bfe095b93eeb3bfef8bc6ba95c57bed3ae103b",
+      "original_logical_rows": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        206
+      ],
+      "sample_rows": 6,
+      "sample_sha256": "2e2d823a85a4fe27daa55001643078abd744312bfcad9df8447e83f70cf7a545"
+    },
+    "employees_directory.csv": {
+      "original_raw_filename": "employees_directory.csv",
+      "original_file_sha256": "2c8e6a96ebb85600479b987d0e46acbc4e5ec82543cf33aedb9b70720ff2458c",
+      "sample_rows": 25,
+      "sample_sha256": "e476de51d206bf5af1678f1186a1005dd6b6c63a05ec8481c268aba47ddab247",
+      "synthetic_directory": true
+    },
+    "resultados-verificados.json": {
+      "sample_sha256": "97ea6d59cf737d46e4ae2a2bd48a1776a1a9c3e7d088598352aeb723d26534fb",
+      "origin": "Selección de resultados previos HU02-V1 y HU03 features-v1, ventana EMP002 y oráculo independiente",
+      "normalized_source_sha256": "a79bdaf626e0c7ab422d0676c9691067b6e7a5d9dbdfc5b074133e2da2ad8a65",
+      "windows_source_sha256": "c9568cba206b937f66ae5e682c4f5628b747fa968bec600c6d217a3f8138e48d"
+    }
+  }
+}

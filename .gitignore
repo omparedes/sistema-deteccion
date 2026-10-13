@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Angular / Node
+node_modules/
+.angular/
+coverage/
+.nx/
+
+# Local environments / secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# Local data (RAW synthetic datasets and ground truth)
+/data/generated/
+/data/private/
+/data/raw/
+/data/processed/
+*.sqlite3
+*.db
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Backup guard: instructions should never be stored under repo
+AGENTS.md
+AGENTS.override.md
+.codex/
+.private/
+private-notes/
+
+
+# Alcance de publicación: documentación académica y demos, no código interno.
+# Esta lista no oculta archivos ya rastreados: revisar Git antes de publicar.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/docs/
+!/docs/**
+!/demo/
+!/demo/**
+
+# Defensa adicional dentro de las carpetas compartibles.
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/*.crt
+**/AGENTS.md
+**/AGENTS.override.md
+**/node_modules/
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.ipynb_checkpoints/
+**/.codex/
+**/.agents/
+**/.private/
+**/ground_truth*
+**/private_eval/
+**/*.zip
+**/*.bak
