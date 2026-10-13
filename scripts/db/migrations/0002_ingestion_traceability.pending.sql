@@ -1,0 +1,68 @@
+-- PROPUESTA PENDIENTE DE REVISIÓN/APLICACIÓN — F2-B.
+-- Todo el DDL está comentado intencionalmente: este archivo NO aplica cambios.
+-- Requiere 0001 y revisión del proyecto Supabase Cloud autorizado.
+-- No crear credenciales/roles login ni políticas públicas automáticamente.
+-- Antes de activarlo: inspeccionar datos históricos, permisos, restricciones
+-- y aprobar la aplicación. Renombrar/quitar comentarios solo con autorización.
+-- Los cambios de normalización/features se revisarán en fases posteriores.
+--
+-- BEGIN;
+--
+-- CREATE TABLE public.ingest_batches (
+--   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+--   source_id uuid NOT NULL REFERENCES public.data_sources(id),
+--   source_filename text NOT NULL,
+--   file_sha256 text NOT NULL CHECK (file_sha256 ~ '^[0-9a-f]{64}$'),
+--   source_schema_version text NOT NULL DEFAULT 'raw-v1',
+--   byte_size bigint NOT NULL CHECK (byte_size >= 0),
+--   archive_reference text,
+--   archive_sha256 text,
+--   directory_sha256 text,
+--   metadata jsonb NOT NULL DEFAULT '{}'::jsonb,
+--   status text NOT NULL DEFAULT 'pending'
+--     CHECK (status IN ('pending', 'importing', 'completed', 'failed')),
+--   row_count bigint NOT NULL DEFAULT 0 CHECK (row_count >= 0),
+--   ingestion_error jsonb,
+--   created_at timestamptz NOT NULL DEFAULT now(),
+--   completed_at timestamptz,
+--   UNIQUE (source_id, file_sha256, source_schema_version),
+--   CHECK (status <> 'completed' OR
+--          (archive_reference IS NOT NULL AND archive_sha256 IS NOT NULL
+--           AND archive_sha256 = file_sha256 AND completed_at IS NOT NULL)),
+--   CHECK (status <> 'failed' OR ingestion_error IS NOT NULL)
+-- );
+--
+-- ALTER TABLE public.raw_events
+--   ADD COLUMN batch_id uuid REFERENCES public.ingest_batches(id),
+--   ADD COLUMN record_number bigint,
+--   ADD COLUMN payload_sha256 text,
+--   ADD COLUMN duplicate_of uuid REFERENCES public.raw_events(id),
+--   ADD COLUMN processing_details jsonb NOT NULL DEFAULT '[]'::jsonb,
+--   ADD CONSTRAINT raw_batch_row_valid CHECK (
+--     (batch_id IS NULL AND record_number IS NULL) OR
+--     (batch_id IS NOT NULL AND record_number IS NOT NULL AND record_number > 0)),
+--   ADD CONSTRAINT raw_payload_sha_valid CHECK (
+--     payload_sha256 IS NULL OR payload_sha256 ~ '^[0-9a-f]{64}$'),
+--   ADD CONSTRAINT raw_duplicate_not_self CHECK (duplicate_of IS NULL OR duplicate_of <> id),
+--   ADD CONSTRAINT raw_processing_details_array CHECK (jsonb_typeof(processing_details) = 'array'),
+--   ADD CONSTRAINT raw_batch_row_unique UNIQUE (batch_id, record_number);
+--
+-- CREATE INDEX idx_raw_source_external_event
+--   ON public.raw_events(source_id, external_event_id);
+--
+-- ALTER TABLE public.ingest_batches ENABLE ROW LEVEL SECURITY;
+-- REVOKE ALL ON public.ingest_batches FROM PUBLIC, anon, authenticated;
+--
+-- COMMIT;
+--
+-- Sin UNIQUE en external_event_id: conserva duplicados RAW de la primera carga.
+-- Campos de lote/fila nullable permiten conservar registros históricos sin
+-- inventar procedencia. El servicio F2-B exigirá estos campos en NUEVAS cargas.
+-- Revisar coherencia source_id RAW/lote en transacción y tests de repositorio;
+-- esta propuesta no pretende demostrar esa relación mediante la FK simple.
+-- Lote completed y filas se confirman en una transacción por fuente. Error:
+-- rollback de filas y registro failed/error en operación separada. El iterador
+-- debe agotarse para verificar huella final antes del COMMIT.
+-- duplicate_of y processing_details preparan trazabilidad; HU02 no implementada.
+-- Rol técnico y permisos/policies mínimos requieren propuesta separada tras
+-- conocer el proyecto/rol. Sin políticas anon/authenticated ni service_role.

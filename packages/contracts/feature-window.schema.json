@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FeatureWindowV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "window_id",
+    "user_id",
+    "window_start",
+    "window_end",
+    "features",
+    "pipeline_version",
+    "is_synthetic",
+    "metadata"
+  ],
+  "properties": {
+    "window_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "user_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "window_start": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "window_end": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "features": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_count",
+        "total_bytes",
+        "operations_per_hour",
+        "off_hours_count",
+        "off_hours_ratio",
+        "distinct_destination_count",
+        "missing_destination_count",
+        "missing_destination_ratio",
+        "download_count",
+        "upload_count",
+        "usb_copy_count"
+      ],
+      "properties": {
+        "operation_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total_bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "operations_per_hour": {
+          "type": "number",
+          "minimum": 0
+        },
+        "off_hours_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "off_hours_ratio": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "distinct_destination_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "missing_destination_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "missing_destination_ratio": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "download_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "upload_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "usb_copy_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "pipeline_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "is_synthetic": {
+      "const": true
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "partition",
+        "coverage",
+        "complete",
+        "model_eligible",
+        "exposure_minutes",
+        "input_fingerprint_sha256",
+        "context",
+        "diagnostics"
+      ],
+      "properties": {
+        "partition": {
+          "enum": [
+            "train",
+            "validation",
+            "test"
+          ]
+        },
+        "coverage": {
+          "enum": [
+            "closed",
+            "open"
+          ]
+        },
+        "complete": {
+          "type": "boolean"
+        },
+        "model_eligible": {
+          "type": "boolean"
+        },
+        "exposure_minutes": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 60
+        },
+        "input_fingerprint_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "context": {
+          "type": "object"
+        },
+        "diagnostics": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

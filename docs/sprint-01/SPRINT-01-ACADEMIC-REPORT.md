@@ -81,7 +81,7 @@ Total: 2,102. Las ventanas no cruzan particiones; no se calculó escalado aprend
 
 ## 11. Evidencias compartibles
 
-[EVIDENCIAS](EVIDENCIAS.md) reúne resultados y límites de comprobación. Las [muestras y su manifiesto](../../demo/muestras/manifest.json) permiten comprobar ejemplos sin divulgar implementación interna ni informes operativos detallados. El [visor](../../demo/visor/index.html) muestra resultados anteriores y el [notebook](../../demo/notebook/Sprint_01_Demostracion.ipynb) realiza cálculos pedagógicos sobre muestras pequeñas.
+[EVIDENCIAS](EVIDENCIAS.md) reúne resultados y límites de comprobación. Las [muestras y su manifiesto](../../demo/muestras/manifest.json) permiten comprobar ejemplos sin divulgar datos completos ni informes operativos detallados. El [visor](../../demo/visor/index.html) muestra resultados anteriores y el [notebook](../../demo/notebook/Sprint_01_Demostracion.ipynb) realiza cálculos pedagógicos sobre muestras pequeñas.
 
 ## 12. Pruebas esenciales
 
@@ -106,3 +106,7 @@ Se obtuvo una base trazable de ingeniería de datos para la investigación. Sus 
 ## 17. Próximo trabajo y revisión estudiantil
 
 Sprint 2, solo después de autorización, abordará entrenamiento, ajuste y evaluación experimental. Los estudiantes deben revisar autoría, rúbrica cuando esté disponible, evidencias Scrum auténticas y aceptación de alcance. [Pendientes](PENDIENTES-ACADEMICOS.md), [guion de exposición](../exposicion/SPRINT-01-DEMO-10MIN.md), [guía de estudio](../capacitacion/GUIA-ESTUDIO.md).
+
+## Diseño de persistencia para estudio
+
+[Tablas, relaciones y almacenamiento](BASE-DATOS.md) y [scripts PostgreSQL](../../scripts/db/README.md). La publicación del código no aplica migraciones ni acredita las capacidades avanzadas congeladas.

@@ -4,7 +4,7 @@ Proyecto: «Sistema de detección y alerta de posibles fugas de información med
 
 La empresa del caso de estudio es real. **Los 20,000 eventos usados en desarrollo son sintéticos**, representan sistemas ficticios y no son exportaciones de esa empresa. No se ha realizado la validación empresarial final ni se afirma eficacia de detección de fugas.
 
-Sprint 1 prepara los datos: HU01 ingesta, HU02 limpieza y HU03 características. Las cifras son resultados previamente verificados, no una ejecución en vivo del material compartido. El prototipo interno utiliza Python y PostgreSQL administrado; estas demostraciones no requieren base de datos, credenciales ni implementación interna.
+Sprint 1 prepara los datos: HU01 ingesta, HU02 limpieza y HU03 características. Las cifras son resultados previamente verificados, no una ejecución en vivo del material compartido. El prototipo interno utiliza Python y PostgreSQL administrado; las demostraciones pedagógicas no requieren base de datos, credenciales ni importar módulos del pipeline. El código del Sprint 1 y sus scripts SQL ahora se comparten para estudio; eso no modifica el estado de sus capacidades avanzadas.
 
 El trabajo es proporcional a investigación: funcionamiento básico correcto, evidencias reproducibles, separación temporal y seguridad esencial. No se exige madurez empresarial. Una validación futura controlada de una o dos semanas y una estación es una posibilidad, no un experimento realizado.
 

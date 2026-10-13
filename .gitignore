@@ -46,7 +46,7 @@ AGENTS.override.md
 private-notes/
 
 
-# Alcance de publicación: documentación académica y demos, no código interno.
+# Publicación autorizada: código del Sprint 1, SQL, contratos, pruebas y materiales académicos.
 # Esta lista no oculta archivos ya rastreados: revisar Git antes de publicar.
 /*
 !/.gitignore
@@ -56,6 +56,17 @@ private-notes/
 !/docs/**
 !/demo/
 !/demo/**
+!/apps/
+!/apps/**
+!/services/
+!/services/**
+!/scripts/
+!/scripts/**
+!/packages/
+!/packages/**
+!/tests/
+!/tests/**
+!/.editorconfig
 
 # Defensa adicional dentro de las carpetas compartibles.
 **/.env
@@ -77,3 +88,6 @@ private-notes/
 **/private_eval/
 **/*.zip
 **/*.bak
+
+# Única configuración compartible: ejemplo ficticio, nunca .env real.
+!/.env.example

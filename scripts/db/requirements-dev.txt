@@ -1,0 +1,2 @@
+# Parser PostgreSQL 17 para validación OFFLINE de SQL, no servidor ni runtime.
+pglast>=7,<8

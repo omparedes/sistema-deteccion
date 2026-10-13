@@ -2,7 +2,7 @@
 
 ## Procedencia y alcance
 
-Caso de estudio real; eventos de desarrollo sintéticos, sin validación empresarial final. Los ejemplos no se atribuyen a empleados reales. El paquete contiene muestras pequeñas y resultados previos; el código interno y los archivos completos no se distribuyen.
+Caso de estudio real; eventos de desarrollo sintéticos, sin validación empresarial final. Los ejemplos no se atribuyen a empleados reales. El paquete incluye código y SQL del Sprint 1 para estudio, muestras pequeñas y resultados previos. Los archivos completos de datos, credenciales y auditorías privadas no se distribuyen.
 
 ## Diccionario de fuentes
 
@@ -68,3 +68,7 @@ Entrenamiento: septiembre 1–20; validación: 21–25; prueba: 26–30, por fec
 **¿Se detectan fugas reales?** No se ha demostrado. La evaluación del modelo y validación final son futuras.
 
 **¿Todo está terminado?** La función principal tiene evidencias; aceptación académica pendiente. P18/P15 avanzados siguen congelados e incompletos.
+
+## Explicación del almacenamiento
+
+Consultar [BASE-DATOS](../sprint-01/BASE-DATOS.md): diez tablas y una vista, relaciones, estados RAW, cuarentena y JSONB de características. [Scripts SQL y estado de migraciones](../../scripts/db/README.md).

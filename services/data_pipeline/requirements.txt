@@ -1,0 +1,3 @@
+# Solo para futura persistencia F2-B; adaptadores/config/tests F2-A usan stdlib.
+# No instalado en F2-A. Instalar después de autorización del entorno.
+psycopg[binary]>=3.2,<4

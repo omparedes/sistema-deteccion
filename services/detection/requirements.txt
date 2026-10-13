@@ -1,0 +1,4 @@
+# Instalar al implementar Sprint 2, no es necesario para el scaffold
+scikit-learn>=1.5,<2.0
+pandas>=2.2,<4.0
+numpy>=1.26,<3.0

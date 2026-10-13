@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/contracts/normalized-event-v1.schema.json",
+  "title": "NormalizedActivityEventV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_id", "source", "source_event_id", "timestamp", "user_id", "operation", "file_size_bytes", "is_synthetic"],
+  "properties": {
+    "event_id": {"type": "string", "format": "uuid"},
+    "source": {"type": "string", "minLength": 1},
+    "source_event_id": {"type": "string", "minLength": 1},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "user_id": {"type": "string", "minLength": 1},
+    "device_id": {"type": ["string", "null"]},
+    "session_id": {"type": ["string", "null"]},
+    "operation": {"enum": ["file_access", "file_download", "file_modify", "file_copy", "web_upload", "cloud_sync", "email_attachment", "usb_copy", "other"]},
+    "file_extension": {"type": ["string", "null"]},
+    "file_type": {"type": ["string", "null"]},
+    "file_size_bytes": {"type": "integer", "minimum": 0},
+    "source_type": {"type": ["string", "null"]},
+    "source_path": {"type": ["string", "null"]},
+    "destination_type": {"type": ["string", "null"]},
+    "destination_path": {"type": ["string", "null"]},
+    "destination_authorized": {"type": ["boolean", "null"]},
+    "data_classification": {"type": ["string", "null"]},
+    "operation_result": {"type": ["string", "null"]},
+    "is_synthetic": {"const": true},
+    "raw_event_reference": {"type": ["string", "null"]}
+  }
+}

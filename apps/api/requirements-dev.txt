@@ -1,0 +1,3 @@
+-r requirements.txt
+# Cliente HTTP ASGI para las pruebas del scaffold.
+httpx>=0.27,<1.0
